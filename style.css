@@ -1,0 +1,743 @@
+:root {
+    --bgBlue: #034691;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #fafbfb;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header img {
+    height: 60%;
+    object-fit: contain;
+}
+
+header form {  
+    width: 40%; 
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+header input {
+    width: 85%;
+    border: 1px solid grey;
+    border-right: 0px;
+    outline: 0;
+    font-size: 18px;
+    padding-left: 10px;
+    background-color: transparent;
+}
+
+header button {
+    width: 15%;
+    border: 0px;
+    cursor: pointer;
+    font-size: 18px;
+    border: 1px solid grey;
+    border-left: 0px;
+    color: white;
+    background-color: var(--bgBlue);
+}
+
+header div i {
+    font-size: 22px;
+    padding-left: 10px;
+}
+
+header div i:hover {
+    cursor: pointer;
+    color: var(--bgBlue);
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 20px 0px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 250ms;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: var(--bgBlue);
+    transition: all 250ms;
+}
+
+nav>div:nth-of-type(1) {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+nav>div:nth-of-type(1):hover {
+    color: var(--bgBlue);
+}
+
+nav>div:nth-of-type(2) {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    column-gap: 5px;
+    cursor: pointer;
+}
+
+nav>div:nth-of-type(2)>div a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+nav>div:nth-of-type(2):hover>div a {
+    color: var(--bgBlue);
+}
+
+/* Main */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    margin: 20px 0px;
+}
+
+section:nth-child(1) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home {
+    display: flex;
+}
+
+.left-home {
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-btn{
+    width: 100%;
+    height: 50px;
+    background-color: var(--bgBlue);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-home-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.left-home-main>.today:hover {
+    text-decoration: underline;
+}
+
+.today {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.left-today {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left-today img {
+    width: 100%;
+}
+
+.right-today {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.right-today h3 {
+    font-size: 16px;
+}
+
+.right-today span {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.mid-home {
+    flex: 0.6;
+    display: flex;
+    align-items: center;
+    background-image: url('./img/big-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: blue;
+}
+
+.left-mid-home {
+    height: 50%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.left-mid-home h3 {
+    width: 70%;
+    align-self: flex-start;
+    font-weight: 400;
+}
+
+.left-mid-home h3 span {
+    color: green;
+}
+
+.left-mid-home h1 {
+    font-weight: 900;
+}
+
+.left-mid-home button {
+    align-self: flex-start;
+    padding: 10px 30px;
+    font-size: 16px;
+    border: 1px solid blue;
+    font-weight: 600;
+}
+
+.right-home {
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+}
+
+.pubg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.pubg img {
+    width: 80%;    
+}
+
+.pubg p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.pubg button {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 1px solid var(--bgBlue);
+    font-weight: 600;
+}
+
+.pubg button:hover {
+    cursor: pointer;
+    color: orangered;
+    border-color: orangered;
+}
+
+/* Small Cards */
+.small-cards {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small-card {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.small-left i {
+    font-size: 30px;
+}
+
+.small-right p {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.small-right span {
+    font-size: 12px;
+    font-weight: 100;
+    color: grey;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.categories>h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.categories-cards {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    margin: 50px 0px;
+}
+
+.categories-cards>div {
+    width: calc(100% / 3);
+    text-align: center;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0px rgba(125,125,125,1);
+    transition: 250ms all;
+    border-radius: 10px;
+}
+
+.categories-cards>div:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 30px 0px var(--bgBlue);
+    transition: 250ms all;
+}
+
+.categories-cards>div>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 95%;
+    height: 90%;
+    padding: 20px;
+    object-fit: contain;
+}
+
+.categories-card img {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 1px solid grey;
+}
+
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.trending-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trending-head>div a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid var(--bgBlue);
+    color: black;
+    font-size: 14px;
+    font-weight: 900;
+    margin: 0 10px;
+    transition: all 300ms;
+}
+
+.featured-btn {
+    background-color: var(--bgBlue);
+    color: white !important;
+    transition: all 300ms;
+}
+
+.featured-btn:hover {
+    background-color: white !important;
+    color: var(--bgBlue) !important;
+    transition: all 300ms;
+}
+
+.trending-head>div a:hover {
+    background-color: var(--bgBlue);
+    color: white;
+    transition: all 300ms;
+}
+
+
+.trending-foot {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+
+.card {
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    height: 100%;
+    transition: all 300ms;
+    height: 100%;
+    padding: 10px;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 30px 0px var(--bgBlue);
+    transition: all 300ms;
+}
+
+.card img {
+    object-fit: contain;
+    width: 100%;
+    height: 50%;
+}
+
+.stars {
+    color: yellow;
+}
+
+.card p {
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.card:hover p {
+    text-decoration: underline;
+}
+
+.money {
+    font-weight: 600;
+    color: green;
+}
+
+
+.brands {
+    display: flex;
+    flex-direction: column;
+}
+
+.brands-brand {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brands-brand img {
+    width: 15%;
+    height: 100px;
+    object-fit: contain;
+    mix-blend-mode: luminosity;
+    cursor: pointer;
+}
+
+.brands-brand img:hover {
+    mix-blend-mode: normal;
+}
+
+.deal {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.deal-title {
+    margin: 20px 0px;
+}
+
+.deal-product {
+    display: flex;
+    width: 100%;
+}
+
+.product-left {
+    width: 30%;
+    background-image: url('./img/girl-shoping.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.product-off {
+    padding-top: 50px;
+}
+
+.product-right {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.product-article {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.trending-head {
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+footer div img {
+    width: 50%;
+}
+
+.left-footer {
+    width: 30%;
+}
+
+.left-footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.right-footer {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 5px;
+}
+
+footer div span {
+    color: grey;
+}
+
+footer div span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#copy {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid black;
+    padding: 20px 0px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+
+    .wrapper {
+        width: 100%;
+    }
+
+    header form {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .home {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .left-home {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .mid-home {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }  
+
+    .right-home {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .small-cards {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    } 
+
+    .categories-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .categories-cards>div{
+        width: 90%;
+    }
+
+    .trending-head{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trending-head>div {
+        margin: 20px 0px;
+    }
+
+    .trending-head>div a{
+        width: calc(100% / 3);
+        padding: 5px;
+    }
+
+    .trending-foot {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+        margin: 20px 0px;
+    }
+
+
+    .deal-product {
+        display: flex;
+        flex-direction: column !important; 
+    }
+
+    .product-left {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .product-right {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .product-article {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 50px;
+    }
+
+   
+    .right-footer {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
